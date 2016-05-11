@@ -1,1 +1,12 @@
 .idea
+.DS_Store
+composer.lock
+/#runtime
+/node_modules
+/bower_components
+/vendor
+/public/static/bower
+/application/Common/Conf/install.php
+/public/static/css/min
+/public/static/css/style.css
+/public/static/js/min

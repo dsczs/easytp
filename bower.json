@@ -1,0 +1,8 @@
+{
+  "name": "easytp",
+  "dependencies": {
+    "font-awesome": "^4.6.0",
+    "jquery-easyui": "jquery.easyui#*",
+    "ueditor": "^1.4.3"
+  }
+}

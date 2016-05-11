@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>__TITLE__</title>
+    <link rel="stylesheet" href="__BOWER__/jquery-easyui/themes/metro/easyui.css?__VERSION__">
+    <link rel="stylesheet" href="__STATIC__/css/easyui.css">
+    <script src="__BOWER__/jquery-easyui/jquery.min.js?__VERSION__"></script>
+    <script src="__BOWER__/jquery-easyui/easyloader.js?__VERSION__"></script>
+</head>
+<body fit="true">
+<div data-options="region:'north',split:false,border:false,height:70">
+    <div style="height:29px;background-color:#f2f2f2;color:#636363;border-bottom:1px solid #cfcfcf;line-height:29px;overflow: hidden;">
+        <b>__TITLE__</b>
+    </div>
+    <div style="height:40px;color:#737373;overflow: hidden;"></div>
+</div>
+
+<div data-options="region:'west',split:true,title:'Loading...',width:200">
+    west
+</div>
+
+<div data-options="region:'center'">
+    center
+</div>
+
+<script>
+    easyloader.base = '__BOWER__/jquery-easyui/';
+    easyloader.locale = 'zh_CN';
+    easyloader.css = false;
+        $(function(){
+            easyloader.load('layout', function(){
+                $('body').layout();
+            });
+        });
+</script>
+</body>
+</html>
